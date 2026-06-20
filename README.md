@@ -5,6 +5,7 @@ To do that, paste these lines into your terminal (make sure you have `cargo` on 
 git clone git@github.com:mc0vafla/ka.git
 cd ka
 cargo build --release
+chmod +x ./target/release/ka
 cp ./target/release/ka ~/.local/bin/
 ```
 also in source code folder u can find **"fishorzshfunc.txt"** and if u want to get to the place u were after exiting in the same place as u were in exploring ur file system with ka just add those functions (depending on ur shell) to ur ~/.zshrc or ~/.config/fish/config.fish file
