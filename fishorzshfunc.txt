@@ -1,0 +1,19 @@
+for fish:
+
+function ka
+    command ka $argv
+    if test -f /tmp/ka_last_dir
+        cd (cat /tmp/ka_last_dir)
+        rm /tmp/ka_last_dir
+    end
+end
+
+for zsh:
+
+ka() {
+    command ka "$@"
+    if [ -f /tmp/ka_last_dir ]; then
+        cd "$(cat /tmp/ka_last_dir)"
+        rm /tmp/ka_last_dir
+    fi
+}
